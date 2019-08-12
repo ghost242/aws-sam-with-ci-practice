@@ -21,7 +21,7 @@ RUN echo "aws_access_key_id = ${key}" >> /root/.aws/credentials
 RUN echo "aws_secret_access_key =${secret_key}  " >> /root/.aws/credentials
 
 # create config file
-RUN echo "[defulat]" > /root/.aws/config
+RUN echo "[default]" > /root/.aws/config
 RUN echo "region = ${region}" >> /root/.aws/config
 RUN echo "output = ${output}" >> /root/.aws/config
 
